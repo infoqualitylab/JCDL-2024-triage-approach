@@ -1,0 +1,32 @@
+keyword_id,risk,cluster,keyword
+1,reducing,Geometry optimization,Density functional theory
+2,reducing,Geometry optimization,DFT
+3,reducing,Geometry optimization,geometry optimization
+4,reducing,Geometry optimization,structural optimization
+5,reducing,Geometry optimization,free energy calculation
+6,reducing,Geometry optimization,structural optimization
+7,reducing,Goodness-of-fit,MAE
+8,reducing,Goodness-of-fit,CMAE
+9,reducing,Goodness-of-fit,r2
+10,reducing,Goodness-of-fit,statistical error parameter
+11,reducing,Conformational search,conformational search
+12,reducing,Conformational search,conformational space generation
+13,reducing,Conformational search,conformational analysis
+14,reducing,Conformational search,conformational sampling
+15,reducing,solvation model,PCM
+16,reducing,solvation model,solvation model
+17,reducing,Scaling and referencing factors,scaling
+18,reducing,Scaling and referencing factors,slope
+19,reducing,Scaling and referencing factors,intercept
+20,reducing,basis set,basis set
+21,reducing,giao method,giao
+22,elevating,Boltzmann weighting,boltzmann
+23,elevating,general citation,quantum chemistry calculation
+24,elevating,general citation,quantum chemical calculation
+25,elevating,general citation,NMR chemical shift calculation
+26,elevating,general citation,NMR chemical shift
+27,elevating,general citation,NMR calculation
+28,elevating,general citation,NMR shift prediction
+29,elevating,python script,python script
+30,elevating,python script,script d
+31,elevating,python script,script
