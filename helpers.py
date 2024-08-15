@@ -1,3 +1,5 @@
+# all helper functions for decision_tree.ipynb and evaluation.ipynb
+
 import pandas as pd
 from collections import OrderedDict
 from collections import Counter
