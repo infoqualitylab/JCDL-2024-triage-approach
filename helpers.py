@@ -161,13 +161,21 @@ def conversion(silver, decision):
         return 'TN'
 
 
-def computing_performance(x):
+def computing_performance(vector, approach_name, outfile_path):
     """
 
-    :param x: a list of TP, TN, FP, or FN
-    :return: false positive rate, false negative rate
+    :param vector: a vector of TP, TN, FP, or FN
+    :param approach_name: the name of the approach
+    :param outfile_path: the output file path
+    :return: dictionary with keys: approach_name, false_negative_rate, false_positive_rate
     """
 
-    counter = Counter(x)
+    counter = Counter(vector)
 
+    false_negative_rate = counter['FN'] / (counter['FN'] + counter['TP']) * 100
+    false_positive_rate = counter['FP'] / (counter['FP'] + counter['TN']) * 100
 
+    with open(outfile_path, 'a') as outfile:
+        outfile.write(approach_name + '\t'
+                      + "{0:.3g}".format(false_negative_rate) + '\t'
+                      + "{0:.3g}".format(false_positive_rate) + '\n')
