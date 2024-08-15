@@ -1,5 +1,6 @@
 import pandas as pd
 from collections import OrderedDict
+from collections import Counter
 
 
 def clean(x):
@@ -140,5 +141,33 @@ def keyword_detection(dict_item, keyword_dict):
     return detection_dict
 
 
+def conversion(silver, decision):
+    """
+
+    :param silver: string representing the silver standard annotation
+    :param decision: string representing the triage decision
+    :return: one of the following: TP, TN, FP, FN
+    """
+    if silver == 'at risk' and decision in ['high risk', 'medium risk']:
+        return 'TP'
+
+    if silver == 'at risk' and decision == 'negligible risk':
+        return 'FN'
+
+    if silver == 'not at risk' and decision in ['high risk', 'medium risk']:
+        return 'FP'
+
+    if silver == 'not at risk' and decision == 'negligible risk':
+        return 'TN'
+
+
+def computing_performance(x):
+    """
+
+    :param x: a list of TP, TN, FP, or FN
+    :return: false positive rate, false negative rate
+    """
+
+    counter = Counter(x)
 
 
