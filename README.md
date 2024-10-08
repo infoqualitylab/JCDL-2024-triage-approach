@@ -40,16 +40,24 @@ Input: ML_input_data
 Output: ML_output_data
 - LSTM_prediction_203.csv: predictions for all sentence-level citation contexts: Y or N
 
-### decision_tree_ipynb
+### decision_tree.ipynb
 
 Code for the three approaches: the base approach, the keyword-based approach (Approach-KW), and the machine learning-based approach (Approach-ML)
 
-Input: decision_tree_input_data
-- keyword_dictionary.csv: all keywords used in the keywords approach
-- LSTM_prediction_203.csv: the prediction of the citing publication propagating risks of the publication from the LSTM model, only for the sentence-level citation context from 203 publications going into stage 3
-- metadata_citation_context_para.csv: metadata for the base approach (stage 1 and stage 2) and paragraph-level citation context for 
-- 
-Output: decision_tree_output_data
+Input:
+- input_data/keyword_dictionary.csv: all keywords used in the keywords approach
+- input_data/LSTM_prediction_203.csv: the prediction of the citing publication propagating risks of the publication from the LSTM model, only for the sentence-level citation context from 203 publications going into stage 3
+- input_data/metadata.csv: metadata needed for the decision trees
+- input_data/citation_context_sentence.csv: the sentence-level citation context (for decision tree as well, the keyword approach)
+
+Output:
+- decision_tree_output_data/decision_df_keywords.csv: decisions made by the keyword approach (Approch-KW)
+- decision_tree_output_data/decision_df_ml.csv: decisions made by the machine learning-based approach (Approach-ML)
+
+### evaluation.ipynb
+Input:
+-
+
 
 
 
