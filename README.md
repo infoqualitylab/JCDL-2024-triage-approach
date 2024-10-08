@@ -8,7 +8,7 @@ scikit-learn 1.5.1
 keras 3.6.0  
 tensorflow 2.17.0  
 
-## File Structures and Explanations
+## File Structure and Explanations
 ### LSTM.ipynb
 An LSTM model to predict the whether the citation context sentence indicate risk of the publication propagate unreliability (Y or N)
 Code adapted from: https://github.com/Conferences2023/TPDL/blob/main/Citation%20Analysis/LSTM.py
@@ -18,7 +18,10 @@ Input: ML_input_data
 Output: ML_output_data
 
 ### decision_tree_ipynb
-
+Code for the three approaches: the base approach, the keyword-based approach (Approach-KW), and the machine learning-based approach (Approach-ML)
+Input: decision_tree_input_data
+- 
+Output: decision_tree_output_data
 
 
 
