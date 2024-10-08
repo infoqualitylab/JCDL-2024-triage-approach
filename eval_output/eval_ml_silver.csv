@@ -84,10 +84,10 @@ DOI,decision,stage,Silver Standard
 10.1021/acs.energyfuels.1c04336,high risk,3,not at risk
 10.1021/acs.jcim.2c01093,negligible risk,3,not at risk
 10.1021/acs.jctc.0c00860,negligible risk,3,not at risk
-10.1021/acs.jctc.7b00772,high risk,3,not at risk
+10.1021/acs.jctc.7b00772,negligible risk,3,not at risk
 10.1021/acs.jmedchem.9b00716,high risk,3,at risk
 10.1021/acs.jnatprod.0c00745,negligible risk,3,not at risk
-10.1021/acs.jnatprod.0c00910,high risk,3,not at risk
+10.1021/acs.jnatprod.0c00910,negligible risk,3,not at risk
 10.1021/acs.jnatprod.0c00929,high risk,3,at risk
 10.1021/acs.jnatprod.1c00185,negligible risk,3,not at risk
 10.1021/acs.jnatprod.1c00738,negligible risk,3,not at risk
@@ -96,7 +96,7 @@ DOI,decision,stage,Silver Standard
 10.1021/acs.jnatprod.2c00332,high risk,3,at risk
 10.1021/acs.jnatprod.2c01140,high risk,3,not at risk
 10.1021/acs.jnatprod.3c00139,high risk,3,at risk
-10.1021/acs.jnatprod.5b00439,high risk,3,at risk
+10.1021/acs.jnatprod.5b00439,negligible risk,3,at risk
 10.1021/acs.jnatprod.5b00695,negligible risk,3,not at risk
 10.1021/acs.jnatprod.5b00832,high risk,3,at risk
 10.1021/acs.jnatprod.6b00574,high risk,3,at risk
@@ -121,7 +121,7 @@ DOI,decision,stage,Silver Standard
 10.1021/acs.jnatprod.9b01108,high risk,3,at risk
 10.1021/acs.joc.0c01988,negligible risk,3,not at risk
 10.1021/acs.joc.0c02214,negligible risk,3,not at risk
-10.1021/acs.joc.2c01415,negligible risk,3,at risk
+10.1021/acs.joc.2c01415,high risk,3,at risk
 10.1021/acs.joc.5b00421,high risk,3,not at risk
 10.1021/acs.joc.5b02396,negligible risk,3,not at risk
 10.1021/acs.joc.6b01431,negligible risk,3,not at risk
@@ -197,7 +197,7 @@ DOI,decision,stage,Silver Standard
 10.3390/md20010052,negligible risk,3,not at risk
 10.3390/molecules24213890,negligible risk,3,not at risk
 10.3390/molecules27248782,high risk,3,at risk
-10.3390/plants8090301,high risk,3,at risk
+10.3390/plants8090301,negligible risk,3,at risk
 10.3762/bjoc.12.10,high risk,3,at risk
 10.3762/bjoc.13.245,high risk,3,not at risk
 10.3998/ark.5550190.0016.307,high risk,3,at risk
