@@ -1,6 +1,6 @@
 # JCDL 2024 triage approaches
 
-## Significant dependencies
+## Dependencies
 - pandas 2.2.2  
 - numpy 1.26.4  
 - openpyxl 3.1.5  
