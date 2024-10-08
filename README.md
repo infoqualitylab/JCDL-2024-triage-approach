@@ -8,7 +8,7 @@ scikit-learn 1.5.1
 keras 3.6.0  
 tensorflow 2.17.0  
 
-# Glossary
+## Glossaries
 sentence-level citation context: the sentence containing the citation marker. For example, from this paragraph from [https://pubs.acs.org/doi/10.1021/acs.joc.9b03129]
 
 From the paragraph: "Nuclear magnetic resonance (NMR) spectroscopy is one of the pivotal analytical tools used to determine key chemical properties of organic compounds, for example, relative/ absolute configurations,1,2 and to provide further structural information, for example, representative conformational patterns of the investigated molecules.3 In this context, the spectroscopic properties of organic compounds can be proficiently predicted by accurate quantum chemical meth- ods.1,4−7 Indeed, the integration of the information from experimental and computational data can then be of fundamental importance to solve different structural issues of organic compounds. In the last decade, different studies were performed with the combination of the information from NMR spectroscopy (experimental part) and quantum mechanical (QM) calculations (predicted part) (QM/NMR integrated approach) for the successful elucidation of the configurational patterns of organic compounds.1,4 Also, this approach is helpful for the stereostructural assignment of natural compounds, thus representing a reliable alternative, faster and cheaper, to total synthesis.8 Also, the notable advances in computer science nowadays allows the perform- ance of accurate conformational sampling and QM calculations even on desktop computers, thus facilitating the structural elucidation process."
@@ -56,7 +56,16 @@ Output:
 
 ### evaluation.ipynb
 Input:
--
+- decision_tree_output/decision_df_keywords.csv: decisions made by the keyword approach (Approch-KW)
+- decision_tree_output/decision_df_ml.csv: decisions made by the machine learning-based approach (Approach-ML)
+- input_data/pub_annotation.csv: silver standard annotation
+
+Output:
+- eval_keyword_silver: comparison between the keyword-based approach and the silver standard
+- eval_ml_silver: comparison between the machine learning-based approach and the silver standard
+- performance_metrics.tsv: perfomrnace metrics of the three approaches, correponding to Table 3 of the publication
+
+
 
 
 
