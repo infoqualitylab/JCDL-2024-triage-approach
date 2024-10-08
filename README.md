@@ -27,7 +27,7 @@ and
 
 ## File Structure and Explanations
 ### LSTM.ipynb
-An LSTM model to predict the whether the citation context sentence indicate risk of the publication propagate unreliability (Y or N)
+An LSTM model to predict the whether a sentence-level citation context indicates risk of the citing publication propagate unreliability (Y or N)
 Code adapted from: https://github.com/Conferences2023/TPDL/blob/main/Citation%20Analysis/LSTM.py
 
 'code of Usman, M., & Balke, W.-T. (2023). On retraction cascade? Citation intention analysis as a quality control mechanism in digital libraries. In O. Alonso, H. Cousijn, G. Silvello, M. Marrero, C. Teixeira Lopes, & S. Marchesin (Eds.), Linking Theory and Practice of Digital Libraries (pp. 117–131). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-43849-3_11'
@@ -38,14 +38,16 @@ Input: ML_input_data
 - test_set.csv: the test set
   
 Output: ML_output_data
-- LSTM_prediction_203.csv: predictions for all citation context sentences: Y or N
+- LSTM_prediction_203.csv: predictions for all sentence-level citation contexts: Y or N
 
 ### decision_tree_ipynb
 
 Code for the three approaches: the base approach, the keyword-based approach (Approach-KW), and the machine learning-based approach (Approach-ML)
 
 Input: decision_tree_input_data
-- citation_context_sentence.csv: the sentences containing the citation marker
+- citation_context_sentence.csv: sentence-level citation contexts
+- keyword_dictionary.csv: all keywords used in the keywords approach
+- LSTM_prediction_203.csv: the prediction of the citing publication propagating risks of the publication from the LSTM model, only for the sentence-level citation context from 203 publications going into stage 3
 - 
 Output: decision_tree_output_data
 
