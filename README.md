@@ -65,7 +65,8 @@ Output:
 - eval_ml_silver: comparison between the machine learning-based approach and the silver standard
 - performance_metrics.tsv: perfomrnace metrics of the three approaches, correponding to Table 3 of the publication
 
-
+### helpers.py
+all helper functions needed for decision_tree.ipynb and evaluation.ipynb
 
 
 
