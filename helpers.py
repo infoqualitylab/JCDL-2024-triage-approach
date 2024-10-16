@@ -177,6 +177,13 @@ def computing_performance(vector, approach_name, outfile_path):
     false_negative_rate = counter['FN'] / (counter['FN'] + counter['TP']) * 100
     false_positive_rate = counter['FP'] / (counter['FP'] + counter['TN']) * 100
 
+    # print confusion matrix
+    print('\n' + approach_name)
+    print('True Positive: ', counter['TP'])
+    print('True Negative: ', counter['TN'])
+    print('False Positive: ', counter['FP'])
+    print('False Negative: ', counter['FN'])
+
     with open(outfile_path, 'a') as outfile:
         outfile.write(approach_name + '\t'
                       + "{0:.3g}".format(false_negative_rate) + '\t'
