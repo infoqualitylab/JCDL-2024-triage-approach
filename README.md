@@ -1,7 +1,5 @@
 # JCDL 2024 triage approaches
 
-Author: Yuanxi Fu (https://github.com/yuanxiesa)
-
 ## Dependencies
 - pandas 2.2.2  
 - numpy 1.26.4  
