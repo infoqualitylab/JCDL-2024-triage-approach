@@ -174,15 +174,17 @@ def computing_performance(vector, approach_name, outfile_path):
 
     counter = Counter(vector)
 
+    num_instance = counter['TP'] + counter['TN'] + counter['FP'] + counter['FN']
+
     false_negative_rate = counter['FN'] / (counter['FN'] + counter['TP']) * 100
     false_positive_rate = counter['FP'] / (counter['FP'] + counter['TN']) * 100
 
     # print confusion matrix
     print('\n' + approach_name)
-    print('True Positive: ', counter['TP'])
-    print('True Negative: ', counter['TN'])
-    print('False Positive: ', counter['FP'])
-    print('False Negative: ', counter['FN'])
+    print('True Positive: ', counter['TP'], '(', '{:.1%}'.format(counter['TP'] / num_instance), ')')
+    print('True Negative: ', counter['TN'], '(', '{:.1%}'.format(counter['TN'] / num_instance), ')')
+    print('False Positive: ', counter['FP'], '(', '{:.1%}'.format(counter['FP'] / num_instance), ')')
+    print('False Negative: ', counter['FN'], '(', '{:.1%}'.format(counter['FN'] / num_instance), ')')
 
     with open(outfile_path, 'a') as outfile:
         outfile.write(approach_name + '\t'
