@@ -163,12 +163,13 @@ def conversion(silver, decision):
         return 'TN'
 
 
-def computing_performance(vector, approach_name, outfile_path):
+def computing_performance(vector, approach_name, outfile_path_performance, outfile_path_confusion_matrix):
     """
 
     :param vector: a vector of TP, TN, FP, or FN
     :param approach_name: the name of the approach
-    :param outfile_path: the output file path
+    :param outfile_path_performance, outfile_path_confusion_matrix: the output file path for performance metrics (Table 3)
+    and confusion matrix (for writing purpose
     :return: dictionary with keys: approach_name, false_negative_rate, false_positive_rate
     """
 
@@ -177,14 +178,24 @@ def computing_performance(vector, approach_name, outfile_path):
     false_negative_rate = counter['FN'] / (counter['FN'] + counter['TP']) * 100
     false_positive_rate = counter['FP'] / (counter['FP'] + counter['TN']) * 100
 
-    # print confusion matrix
-    print('\n' + approach_name)
-    print('True Positive: ', counter['TP'])
-    print('True Negative: ', counter['TN'])
-    print('False Positive: ', counter['FP'])
-    print('False Negative: ', counter['FN'])
+    sensitivity = counter['TP'] / (counter['TP'] + counter['FN'])
+    specificity = counter['TN'] / (counter['TN'] + counter['FP'])
+    precision = counter['TP'] / (counter['TP'] + counter['FP'])
+    accuracy = (counter['TP'] + counter['TN']) / (counter['TP'] + counter['TN'] + counter['FP'] + counter['FN'])
 
-    with open(outfile_path, 'a') as outfile:
-        outfile.write(approach_name + '\t'
+    # print confusion matrix
+    with open(outfile_path_confusion_matrix, 'a') as outfile_1:
+        outfile_1.write('\n' + approach_name + '\n')
+        outfile_1.write('True Positive: ' + str(counter['TP']) + '\n')
+        outfile_1.write('True Negative: ' + str(counter['TN']) + '\n')
+        outfile_1.write('False Positive: ' + str(counter['FP']) + '\n')
+        outfile_1.write('False Negative: ' + str(counter['FN']) + '\n')
+        outfile_1.write('Sensitivity: ' + '{:.1%}'.format(sensitivity) + '\n')
+        outfile_1.write('Specificity: ' + '{:.1%}'.format(specificity) + '\n')
+        outfile_1.write('Precision ' + '{:.1%}'.format(precision) + '\n')
+        outfile_1.write('Accuracy: ' + '{:.1%}'.format(accuracy) + '\n')
+
+    with open(outfile_path_performance,'a') as outfile_2:
+        outfile_2.write(approach_name + '\t'
                       + "{0:.3g}".format(false_negative_rate) + '\t'
                       + "{0:.3g}".format(false_positive_rate) + '\n')

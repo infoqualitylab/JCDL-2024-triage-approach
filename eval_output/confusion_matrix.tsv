@@ -1,0 +1,50 @@
+
+Base approach (Stages 1 & 2)
+True Positive: 83
+True Negative: 78
+False Positive: 120
+False Negative: 3
+Sensitivity: 96.5%
+Specificity: 39.4%
+Precision 40.9%
+Accuracy: 56.7%
+
+Approach-KW (Stages 1, 2, & 3)
+True Positive: 70
+True Negative: 115
+False Positive: 83
+False Negative: 16
+Sensitivity: 81.4%
+Specificity: 58.1%
+Precision 45.8%
+Accuracy: 65.1%
+
+The keyword-based decision tree module (Q4 and Q5) in Approach-KW (Stage 3)
+True Positive: 70
+True Negative: 37
+False Positive: 83
+False Negative: 13
+Sensitivity: 84.3%
+Specificity: 30.8%
+Precision 45.8%
+Accuracy: 52.7%
+
+Approach-ML (Stages 1, 2, & 3)
+True Positive: 71
+True Negative: 177
+False Positive: 21
+False Negative: 15
+Sensitivity: 82.6%
+Specificity: 89.4%
+Precision 77.2%
+Accuracy: 87.3%
+
+The machine learning-based module in Approach-ML (Stage 3)
+True Positive: 71
+True Negative: 99
+False Positive: 21
+False Negative: 12
+Sensitivity: 85.5%
+Specificity: 82.5%
+Precision 77.2%
+Accuracy: 83.7%
