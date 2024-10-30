@@ -1,6 +1,10 @@
 # JCDL 2024 triage approaches
 Author: Yuanxi Fu (https://github.com/yuanxiesa)
 
+Code used for 
+Heng Zheng, Yuanxi Fu, Ishita Sarraf, M. Janina Sarol, and Jodi Schneider. (2024). Addressing Unreliability Propagation in Scientific Digital
+Libraries. *Proceedings of the ACM/IEEE Joint Conference on Digital Libraries in 2024.*
+
 ## Dependencies
 - pandas 2.2.2  
 - numpy 1.26.4  
