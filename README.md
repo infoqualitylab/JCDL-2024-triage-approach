@@ -2,8 +2,8 @@
 Author: Yuanxi Fu (https://github.com/yuanxiesa)
 
 Code used for 
-Heng Zheng, Yuanxi Fu, Ishita Sarraf, M. Janina Sarol, and Jodi Schneider. (2024). Addressing Unreliability Propagation in Scientific Digital
-Libraries. *Proceedings of the ACM/IEEE Joint Conference on Digital Libraries in 2024.*
+Heng Zheng*, Yuanxi Fu*, Ishita Sarraf, M. Janina Sarol, and Jodi Schneider. (2024). Addressing Unreliability Propagation in Scientific Digital
+Libraries. Proceedings of the ACM/IEEE Joint Conference on Digital Libraries in 2024.[https://doi.org/10.1145/3677389.3702526](https://doi.org/10.1145/3677389.3702526). (*both authors contributed equally)
 
 ## Dependencies
 - pandas 2.2.2  
