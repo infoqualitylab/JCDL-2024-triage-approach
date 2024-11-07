@@ -1,5 +1,6 @@
 
 Base approach (Stages 1 & 2)
+Total number: 284
 True Positive: 83
 True Negative: 78
 False Positive: 120
@@ -10,6 +11,7 @@ Precision 40.9%
 Accuracy: 56.7%
 
 Approach-KW (Stages 1, 2, & 3)
+Total number: 284
 True Positive: 70
 True Negative: 115
 False Positive: 83
@@ -20,6 +22,7 @@ Precision 45.8%
 Accuracy: 65.1%
 
 The keyword-based decision tree module (Q4 and Q5) in Approach-KW (Stage 3)
+Total number: 203
 True Positive: 70
 True Negative: 37
 False Positive: 83
@@ -30,6 +33,7 @@ Precision 45.8%
 Accuracy: 52.7%
 
 Approach-ML (Stages 1, 2, & 3)
+Total number: 284
 True Positive: 71
 True Negative: 177
 False Positive: 21
@@ -40,6 +44,7 @@ Precision 77.2%
 Accuracy: 87.3%
 
 The machine learning-based module in Approach-ML (Stage 3)
+Total number: 203
 True Positive: 71
 True Negative: 99
 False Positive: 21

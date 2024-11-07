@@ -178,6 +178,7 @@ def computing_performance(vector, approach_name, outfile_path_performance, outfi
     false_negative_rate = counter['FN'] / (counter['FN'] + counter['TP']) * 100
     false_positive_rate = counter['FP'] / (counter['FP'] + counter['TN']) * 100
 
+    total = len(vector)
     sensitivity = counter['TP'] / (counter['TP'] + counter['FN'])
     specificity = counter['TN'] / (counter['TN'] + counter['FP'])
     precision = counter['TP'] / (counter['TP'] + counter['FP'])
@@ -186,6 +187,7 @@ def computing_performance(vector, approach_name, outfile_path_performance, outfi
     # print confusion matrix
     with open(outfile_path_confusion_matrix, 'a') as outfile_1:
         outfile_1.write('\n' + approach_name + '\n')
+        outfile_1.write('Total number: ' + str(total) + '\n')
         outfile_1.write('True Positive: ' + str(counter['TP']) + '\n')
         outfile_1.write('True Negative: ' + str(counter['TN']) + '\n')
         outfile_1.write('False Positive: ' + str(counter['FP']) + '\n')
