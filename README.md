@@ -1,5 +1,5 @@
 # JCDL 2024 triage approaches
-Author: Yuanxi Fu (https://github.com/yuanxiesa)
+Author: Yuanxi Fu (https://github.com/yuanxiesa); Ishita Sarraf (https://github.com/ishita-17)
 
 Code used for 
 Heng Zheng*, Yuanxi Fu*, Ishita Sarraf, M. Janina Sarol, and Jodi Schneider. (2024). Addressing Unreliability Propagation in Scientific Digital
